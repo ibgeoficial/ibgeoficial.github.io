@@ -193,15 +193,15 @@
 <h1 id="calend-rio">Calendário</h1>
 <h2 id="instala-o">Instalação</h2>
 <p>Para instalar a biblioteca, rode:</p>
-<pre class="line-numbers"><code class="language-bash">$ npm install &#40;ibge/calendario --save</code></pre><h2 id="usando-a-biblioteca">Usando a biblioteca</h2>
+<pre class="line-numbers"><code class="language-bash">$ npm install @ibge/calendario --save</code></pre><h2 id="usando-a-biblioteca">Usando a biblioteca</h2>
 <p>Após instalar a biblioteca, você deve importar o <code>CalendarioModule</code> no seu <code>AppModule</code>:</p>
-<pre class="line-numbers"><code class="language-typescript">import { BrowserModule } from &#39;&#40;angular/platform-browser&#39;;
-import { NgModule } from &#39;&#40;angular/core&#39;;
+<pre class="line-numbers"><code class="language-typescript">import { BrowserModule } from &#39;@angular/platform-browser&#39;;
+import { NgModule } from &#39;@angular/core&#39;;
 
 // Módulo do Calendário
-import { CalendarioModule } from &#39;&#40;ibge/calendario&#39;;
+import { CalendarioModule } from &#39;@ibge/calendario&#39;;
 
-&#40;NgModule({
+@NgModule({
   declarations: [
     AppComponent
   ],
@@ -216,7 +216,7 @@ import { CalendarioModule } from &#39;&#40;ibge/calendario&#39;;
 })
 export class AppModule { }</code></pre><p>Uma vez importado, é possível consumir os serviços do calendário, recebendo a informação segundo a api de calendário <code>http://servicodados.ibge.gov.br/api/docs/calendario</code></p>
 <pre class="line-numbers"><code class="language-typescript">// Importar o serviço e interfaces, se necessário
-import { CalendarioService, Divulgacao, DivulgacoesPaginadas } from &#39;&#40;ibge/calendario&#39;;
+import { CalendarioService, Divulgacao, DivulgacoesPaginadas } from &#39;@ibge/calendario&#39;;
 
 // ...
 

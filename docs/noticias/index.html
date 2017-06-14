@@ -193,15 +193,15 @@
 <h1 id="noticias">Noticias</h1>
 <h2 id="instala-o">Instalação</h2>
 <p>Para instalar a biblioteca, rode:</p>
-<pre class="line-numbers"><code class="language-bash">$ npm install &#40;ibge/noticias --save</code></pre><h2 id="usando-a-biblioteca">Usando a biblioteca</h2>
+<pre class="line-numbers"><code class="language-bash">$ npm install @ibge/noticias --save</code></pre><h2 id="usando-a-biblioteca">Usando a biblioteca</h2>
 <p>Após instalar a biblioteca, você deve importar o <code>NoticiasModule</code> no seu <code>AppModule</code>:</p>
-<pre class="line-numbers"><code class="language-typescript">import { BrowserModule } from &#39;&#40;angular/platform-browser&#39;;
-import { NgModule } from &#39;&#40;angular/core&#39;;
+<pre class="line-numbers"><code class="language-typescript">import { BrowserModule } from &#39;@angular/platform-browser&#39;;
+import { NgModule } from &#39;@angular/core&#39;;
 
 // Módulo de Notícias
-import { NoticiasModule } from &#39;&#40;ibge/noticias&#39;;
+import { NoticiasModule } from &#39;@ibge/noticias&#39;;
 
-&#40;NgModule({
+@NgModule({
   declarations: [
     AppComponent
   ],
@@ -216,7 +216,7 @@ import { NoticiasModule } from &#39;&#40;ibge/noticias&#39;;
 })
 export class AppModule { }</code></pre><p>Uma vez importado, é possível consumir os serviços do calendário, recebendo a informação segundo a api de calendário <code>http://servicodados.ibge.gov.br/api/docs/noticias</code></p>
 <pre class="line-numbers"><code class="language-typescript">// Importar o serviço e interfaces, se necessário
-import { NoticiasService, Noticia, NoticiasPaginadas } from &#39;&#40;ibge/noticias&#39;;
+import { NoticiasService, Noticia, NoticiasPaginadas } from &#39;@ibge/noticias&#39;;
 
 // ...
 
